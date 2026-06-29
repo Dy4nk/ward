@@ -1,0 +1,14 @@
+[Unit]
+Description=Ward Process Supervisor
+After=network.target
+
+[Service]
+Type=simple
+# Path to the ward binary (adjust if installed elsewhere)
+ExecStart=/usr/local/bin/ward up
+ExecReload=/usr/local/bin/ward reload
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

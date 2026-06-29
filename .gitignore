@@ -1,0 +1,26 @@
+# Binaries
+/ward
+/ward.exe
+/dist/
+
+# Test Artifacts & Local DBs
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sock
+*.pid
+*.log
+/test_config.toml
+/win_config.toml
+
+# Go testing files
+*.test
+*.out
+/internal/process/testdata/helper/helper
+/internal/process/testdata/helper/helper.exe
+
+# IDE/System files
+.vscode/
+.idea/
+.DS_Store
